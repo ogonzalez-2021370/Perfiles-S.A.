@@ -1,0 +1,110 @@
+﻿/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Botón de Regresar */
+.btn-back {
+    display: inline-block;
+    background: #646464; /* Negro */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    left: 20px;
+    top: 20px;
+    border: 2px solid transparent;
+}
+
+    .btn-back:hover {
+        background: black; /* Fondo blanco */
+        color: white; /* Texto negro */
+        border: 2px solid black; /* Borde negro para mejor visibilidad */
+        transform: scale(1.05); /* Efecto ligero de agrandamiento */
+    }
+
+
+/* Título */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del Formulario */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Botón de Filtrar */
+button.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    button.btn-primary:hover {
+        background: linear-gradient(135deg, #0056b3, #003b80);
+        transform: scale(1.05);
+    }
+
+/* Estilos de la Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

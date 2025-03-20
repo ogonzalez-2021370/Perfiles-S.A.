@@ -1,0 +1,106 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado */
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Botón de Regresar */
+.btn-back {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #646464;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+    .btn-back:hover {
+        background-color: #000000;
+        color: white;
+    }
+
+/* Botón de Crear Nuevo */
+.create-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+    .create-btn:hover {
+        background-color: #18722c;
+        color: white;
+    }
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Botones de acciones */
+.action-links a {
+    text-align: right; /* Alinea los botones a la derecha */
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+
+    .action-links a:nth-child(1) { /* Edit */
+        background-color: #ffc107;
+        color: black;
+    }
+
+    .action-links a:nth-child(2) { /* Details */
+        background-color: #17a2b8;
+        color: white;
+    }
+
+    .action-links a:nth-child(3) { /* Delete */
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .action-links a:hover {
+        opacity: 0.8;
+    }

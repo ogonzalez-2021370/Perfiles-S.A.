@@ -1,0 +1,80 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de detalles */
+.details-container {
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Separador */
+hr {
+    border-top: 2px solid #007bff;
+}
+
+/* Estilo de etiquetas */
+dl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+dt {
+    font-weight: bold;
+    color: #555;
+}
+
+dd {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Botones */
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+    .btn-edit:hover {
+        background-color: #e0a800;
+    }
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+    .btn-back:hover {
+        background-color: #5a6268;
+    }

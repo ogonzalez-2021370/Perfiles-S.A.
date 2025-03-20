@@ -1,0 +1,68 @@
+﻿@model Dictionary<string, List<Perfiles_S.A.Models.ReporteEmpleado>>
+
+@{
+    ViewBag.Title = "Reporte de Empleados";
+}
+
+<h2>Reporte de Empleados</h2>
+
+<head>
+    <link rel="stylesheet" href="~/Content/reporte.css" />
+</head>
+
+<a href="https://localhost:44319" class="btn-back">Regresar</a>
+
+<br />
+<br />
+
+<!-- Formulario de filtrado por rango de fechas -->
+<form method="get" action="@Url.Action("Reporte")" class="form-inline">
+    <div class="form-group">
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" name="fechaInicio" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="fechaFin">Fecha de Fin:</label>
+        <input type="date" name="fechaFin" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+
+<hr />
+
+<!-- Mostrar empleados agrupados por departamento -->
+@foreach (var grupo in Model)
+{
+    <h3>Departamento: @grupo.Key</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>DPI</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Género</th>
+                <th>Fecha de Ingreso</th>
+                <th>Edad</th>
+                <th>Dirección</th>
+                <th>NIT</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var empleado in grupo.Value)
+            {
+                <tr>
+                    <td>@empleado.Nombres</td>
+                    <td>@empleado.DPI</td>
+                    <td>@empleado.FechaNacimiento.ToShortDateString()</td>
+                    <td>@empleado.Genero</td>
+                    <td>@empleado.FechaIngreso.ToShortDateString()</td>
+                    <td>@empleado.Edad</td>
+                    <td>@empleado.Direccion</td>
+                    <td>@empleado.NIT</td>
+                    <td>@empleado.Estatus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,95 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.form-horizontal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Encabezado */
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+h4 {
+    text-align: center;
+    color: #333;
+}
+
+/* Separador */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los grupos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.control-label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs y selects */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Mensajes de validación */
+.text-danger {
+    color: #dc3545;
+    font-size: 12px;
+}
+
+/* Botón de crear */
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+    .btn-submit:hover {
+        background-color: #218838;
+    }
+
+/* Botón de regresar */
+.btn-back {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+    .btn-back:hover {
+        text-decoration: underline;
+    }

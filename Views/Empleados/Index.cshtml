@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Perfiles_S.A.Models.Empleados>
+
+@{
+    ViewBag.Title = "Agregar Empleado";
+}
+
+<h2>Agregar Empleado</h2>
+
+<head>
+    <link rel="stylesheet" href="~/Content/styles.css" />
+</head>
+
+<!-- Botón de Regresar -->
+<p><a href="https://localhost:44319" class="btn btn-back">Regresar</a></p>
+
+<br />
+
+<p>
+    @Html.ActionLink("Nuevo Empleado", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>DPI</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Género</th>
+            <th>Fecha de Ingreso</th>
+            <th>Edad</th>
+            <th>Dirección</th>
+            <th>NIT</th>
+            <th>Departamento</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Nombres)</td>
+                <td>@Html.DisplayFor(modelItem => item.DPI)</td>
+                <td>@item.FechaNacimiento.ToString("dd/MM/yyyy")</td> <!-- Solo muestra la fecha -->
+                <td>@Html.DisplayFor(modelItem => item.Genero)</td>
+                <td>@item.FechaIngreso.ToString("dd/MM/yyyy")</td> <!-- Solo muestra la fecha -->
+                <td>@Html.DisplayFor(modelItem => item.Edad)</td>
+                <td>@Html.DisplayFor(modelItem => item.Direccion)</td>
+                <td>@Html.DisplayFor(modelItem => item.NIT)</td>
+                <td>@Html.DisplayFor(modelItem => item.Departamentos.NombreDepartamento)</td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.EmpleadoID }, new { @class = "btn btn-warning btn-sm" })
+                    <br />
+                    @Html.ActionLink("Detalles", "Details", new { id = item.EmpleadoID }, new { @class = "btn btn-info btn-sm" })
+                    <br />
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.EmpleadoID }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

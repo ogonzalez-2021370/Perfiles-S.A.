@@ -1,0 +1,95 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+div {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Encabezado */
+h2 {
+    text-align: center;
+    color: #dc3545;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Separador */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Lista de detalles */
+dl.dl-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+dt {
+    font-weight: bold;
+    color: #555;
+    width: 45%;
+    text-align: right;
+}
+
+dd {
+    width: 50%;
+    margin-left: 0;
+    text-align: left;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Botones */
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .btn-delete:hover {
+        background-color: #c82333;
+    }
+
+.btn-back {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+    .btn-back:hover {
+        background-color: #0056b3;
+    }

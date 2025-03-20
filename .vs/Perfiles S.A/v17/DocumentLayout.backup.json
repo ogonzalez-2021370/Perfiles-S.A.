@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gonza\\Desktop\\Prueba 2\\Perfiles S.A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D007F77-2500-4173-8F91-0006E61B6178}|Perfiles S.A.csproj|C:\\Users\\gonza\\Desktop\\Prueba 2\\Perfiles S.A\\controllers\\departamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D007F77-2500-4173-8F91-0006E61B6178}|Perfiles S.A.csproj|solutionrelative:controllers\\departamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D007F77-2500-4173-8F91-0006E61B6178}|Perfiles S.A.csproj|c:\\users\\gonza\\desktop\\prueba 2\\perfiles s.a\\models\\perfilesmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{9D007F77-2500-4173-8F91-0006E61B6178}|Perfiles S.A.csproj|solutionrelative:models\\perfilesmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PerfilesModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Prueba 2\\Perfiles S.A\\Models\\PerfilesModel.edmx",
+              "RelativeDocumentMoniker": "Models\\PerfilesModel.edmx",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Prueba 2\\Perfiles S.A\\Models\\PerfilesModel.edmx [Diagram1]",
+              "RelativeToolTip": "Models\\PerfilesModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-02-16T16:00:59.813Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartamentosController.cs",
+              "DocumentMoniker": "C:\\Users\\gonza\\Desktop\\Prueba 2\\Perfiles S.A\\Controllers\\DepartamentosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartamentosController.cs",
+              "ToolTip": "C:\\Users\\gonza\\Desktop\\Prueba 2\\Perfiles S.A\\Controllers\\DepartamentosController.cs",
+              "RelativeToolTip": "Controllers\\DepartamentosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T15:56:36.284Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

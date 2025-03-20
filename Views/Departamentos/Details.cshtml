@@ -1,0 +1,26 @@
+﻿@model Perfiles_S.A.Models.Departamentos
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<head>
+    <link rel="stylesheet" href="~/Content/departamentos-details.css" />
+</head>
+
+<div class="details-container">
+    <h4>Departamentos</h4>
+    <hr />
+    <dl>
+        <dt>@Html.DisplayNameFor(model => model.NombreDepartamento)</dt>
+        <dd>@Html.DisplayFor(model => model.NombreDepartamento)</dd>
+    </dl>
+</div>
+
+<div class="action-buttons">
+    @Html.ActionLink("Editar", "Edit", new { id = Model.DepartamentoID }, new { @class = "btn-edit" })
+    @Html.ActionLink("Regresar", "Index", null, new { @class = "btn-back" })
+</div>
+

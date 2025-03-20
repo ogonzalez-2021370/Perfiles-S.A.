@@ -1,0 +1,33 @@
+﻿@model Perfiles_S.A.Models.Departamentos
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<head>
+    <link rel="stylesheet" href="~/Content/departamentos-delete.css" />
+</head>
+
+<h3>¿Estas seguro que deseas eliminar el siguiente departamento?</h3>
+<div class="delete-container">
+    <h4>Departamentos</h4>
+    <hr />
+    <dl>
+        <dt>@Html.DisplayNameFor(model => model.NombreDepartamento)</dt>
+        <dd>@Html.DisplayFor(model => model.NombreDepartamento)</dd>
+    </dl>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions">
+            <input type="submit" value="Eliminar" class="btn-delete" />
+            @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn-cancel" })
+        </div>
+    }
+</div>
+
